@@ -1,0 +1,4 @@
+const reactNavigator = useNavigate();
+but at main it is const reactNavigator = useNavigate();   editorpage.js mein  2:12:28
+
+2:15:25 css
