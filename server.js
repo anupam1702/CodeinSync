@@ -57,7 +57,12 @@ io.on("connection", (socket) => {
   socket.on(ACTIONS.OUTPUT,({ roomId, details})=>{
     socket.in(roomId).emit(ACTIONS.SET_OUTPUT, { details: details });
 });
-
+socket.on(ACTIONS.LANGUAGE,({ roomId, language })=>{
+  socket.in(roomId).emit(ACTIONS.SET_LANGUAGE,{ lang: language });
+});
+socket.on(ACTIONS.CUSTOM_INPUT,({ roomId, input})=>{
+  socket.in(roomId).emit(ACTIONS.CUSTOM_INPUT,{input: input});
+});
 
   socket.on("disconnecting", () => {
     const rooms = [...socket.rooms];

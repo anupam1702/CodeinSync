@@ -127,7 +127,7 @@ const EditorPage = () => {
               codeRef.current = code;
             }}
           />
-        </div>
+       </div>
         {/*<div className="side">
           <textarea className="size"></textarea>
           </div> */}

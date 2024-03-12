@@ -181,7 +181,7 @@ footer a {
 /* css of code editor */
 
 .CodeMirror {
-  min-height: calc(95vh - 20px);
+  min-height: calc(87vh - 20px);
   font-size: 20px;
   line-height: 1.6;
   padding-top: 20px;
