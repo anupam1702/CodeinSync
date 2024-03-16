@@ -7,8 +7,10 @@ const path = require("path");
 
 const server = http.createServer(app);
 const io = new Server(server);
+const job=require("./cron/cron.js")
 
 app.use(express.static("build"));
+job.start();
 
 app.use((req, res, next) => {
   res.sendFile(path.join(__dirname, "build", "index.html"));
